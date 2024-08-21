@@ -1,0 +1,2 @@
+{"sentText": "引起内扰的原因是由组成系统的元部件参数变化导致的。", "relationMentions": [{"em1Text": "内扰", "em1Pos": "(2, 4)", "em2Text": "系统", "em2Pos": "(11, 13)", "label": "1"}, {"em1Text": "系统", "em1Pos": "(11, 13)", "em2Text": "元部件参数", "em2Pos": "(14, 19)", "label": "1"}]}
+{"sentText": "线性系统中不含有任意一个非线性元件。", "relationMentions": [{"em1Text": "线性系统", "em1Pos": "(0, 4)", "em2Text": "非线性元件", "em2Pos": "(12, 17)", "label": "1"}]}
