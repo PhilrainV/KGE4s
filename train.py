@@ -30,7 +30,6 @@ def computeNerGatherAcc(predNer, Nerlabel):
     return intersectionNum / GatherAccNum, intersectionNum / GatherRecallNum
 
 
-#  最好可以补充一个验证集
 def train(selfTrainData, Epochs):
     testRE2 = 0
     lr = 3e-4
@@ -149,12 +148,10 @@ def train(selfTrainData, Epochs):
         print('REAcc:', (REheadAcc + REtailAcc) / 2, 'EffREAcc:', (REheadEffAcc + REtailEffAcc) / 2)
         print(' ')
 
-        # 需要写一个记录log程序
         if ((epoch + 1) % 5 == 0 or epoch + 1 == Epochs)and epoch>30:
             torch.save({'LLMJEmodel': model.state_dict()}, './model/LLMJE' + str(epoch + 1) + '.pth')
         log.append([trainNerLoss,trainRELoss,trainLoss])
 
-    # 需要写一个ply打印acc和loss的程序，并保存折线图
 
 
 if __name__ == '__main__':
